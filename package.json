@@ -14,7 +14,7 @@
     "ng": "ng",
     "start": "ng serve --port=7001",
     "setup": "tsc nav.config.ts && ts-node ./scripts/build.mjs",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider && npm run setup && ng build --prod --base-href ./",
+    "build": "cross-env NODE_OPTIONS='--openssl-legacy-provider --inspect' && npm run setup && ng build --prod --base-href ./",
     "lint": "eslint --cache --ext .js,.ts ./src"
   },
   "private": true,
@@ -51,6 +51,7 @@
     "eslint": "^7.25.0",
     "protractor": "~7.0.0",
     "ts-node": "~9.1.1",
+    "cross-env": "^7.0.3",
     "tslint": "~6.1.3",
     "typescript": "~4.0.2"
   },
