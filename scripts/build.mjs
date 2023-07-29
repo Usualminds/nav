@@ -70,7 +70,7 @@ ${cnzzScript}
 `.trim()
 
 let seoTemplate = `
-<div data-url="https://github.com/xjh22222228/nav" style="z-index:-1;position:fixed;top:-10000vh;left:-10000vh;">
+<div data-url="https://tools.qjidea.com" style="z-index:-1;position:fixed;top:-10000vh;left:-10000vh;">
 `
 
 async function buildSeo() {
@@ -118,8 +118,8 @@ async function build() {
 }
 
 buildSeo()
-.finally(() => build())
-.catch(console.error)
+  .finally(() => build())
+  .catch(console.error)
 
 function getLoadKey() {
   const keys = Object.keys(LOAD_MAP)

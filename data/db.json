@@ -4279,15 +4279,6 @@
                 "createdAt": "2021-01-23T01:32:06.423Z",
                 "rate": 5,
                 "top": false
-              },
-              {
-                "name": "weapp-input-frame",
-                "desc": "验证码、支付密码输入框组件",
-                "url": "https://github.com/xjh22222228/weapp-input-frame",
-                "createdAt": "2021-01-23T01:32:06.423Z",
-                "urls": {},
-                "rate": 5,
-                "top": false
               }
             ],
             "createdAt": "2021-01-23T01:32:06.423Z"
@@ -5313,7 +5304,7 @@
                 "top": false
               },
               {
-                "name": "npm1",
+                "name": "npm",
                 "desc": "npm是JavaScript世界的包管理工具,并且是 Node.js 平台的默认包管理工具",
                 "url": "https://www.npmjs.com/",
                 "urls": {
@@ -6537,16 +6528,6 @@
                 "urls": {},
                 "rate": 5,
                 "top": false
-              },
-              {
-                "icon": "https://eggjs.org/images/favicon.png",
-                "name": "egg-mailer",
-                "desc": "基于 nodemailer 封装的参数验证插件",
-                "url": "https://github.com/xjh22222228/egg-mailer",
-                "createdAt": "2021-01-23T01:32:06.423Z",
-                "urls": {},
-                "rate": 5,
-                "top": false
               }
             ],
             "createdAt": "2021-01-23T01:32:06.423Z"
@@ -7275,15 +7256,7 @@
           {
             "title": "其他",
             "nav": [
-              {
-                "name": "ip",
-                "desc": "获取公网IP地址、v4/v6",
-                "url": "https://github.com/xjh22222228/ip",
-                "createdAt": "2021-01-23T01:32:06.423Z",
-                "urls": {},
-                "rate": 5,
-                "top": false
-              },
+        
               {
                 "name": "terminal",
                 "desc": "提供了用于处理终端的支持功能，这在UNIX系统上很常见",
@@ -8129,21 +8102,6 @@
                 "name": "PyPi",
                 "desc": "使用Python软件包索引查找，安装和发布Python软件包",
                 "url": "https://pypi.org/",
-                "createdAt": "2021-01-23T01:32:06.423Z",
-                "urls": {},
-                "rate": 5,
-                "top": false
-              }
-            ],
-            "createdAt": "2021-01-23T01:32:06.423Z"
-          },
-          {
-            "title": "工具",
-            "nav": [
-              {
-                "name": "PCU",
-                "desc": "python-check-updates, 检查 pip 当前依赖包最新版本",
-                "url": "https://github.com/xjh22222228/python-check-updates",
                 "createdAt": "2021-01-23T01:32:06.423Z",
                 "urls": {},
                 "rate": 5,
