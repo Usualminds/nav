@@ -75,35 +75,43 @@ import { LogoComponent } from '../components/logo/logo.component';
 import { CardComponent } from '../components/card/index.component'
 import { MoveSiteComponent } from '../components/move-site/index.component'
 
+function isMobile() {
+  let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  return flag;
+}
+
+let customPath = isMobile() ? 'app' : settings.theme.toLowerCase()
+
 const appRoutes: Routes = [
-  { 
+  {
     path: 'sim',
     component: SimComponent,
   },
-  { 
+  {
     path: 'side',
     component: SideComponent,
   },
-  { 
+  {
     path: 'shortcut',
     component: ShortcutComponent,
   },
-  { 
+  {
     path: 'light',
     component: LightComponent,
     data: {
       renderLinear: true
     }
   },
-  { 
+  {
     path: 'app',
     component: WebpComponent,
   },
-  { 
+  {
     path: 'admin',
     component: AdminComponent,
   },
-  { 
+  {
     path: 'system',
     component: SystemComponent,
     children: [
@@ -147,9 +155,11 @@ const appRoutes: Routes = [
   },
   {
     path: '**',
-    redirectTo: '/' + settings.theme.toLowerCase(),
+    redirectTo: '/' + customPath,
   },
 ]
+
+
 
 @NgModule({
   declarations: [
