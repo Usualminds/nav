@@ -81,9 +81,6 @@ function isMobile() {
   return flag;
 }
 
-
-alert(isMobile())
-
 let customPath = isMobile() ? 'app' : settings.theme.toLowerCase()
 
 const appRoutes: Routes = [

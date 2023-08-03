@@ -16,11 +16,11 @@ import { getToken, removeToken } from 'src/utils/user'
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  constructor (
+  constructor(
     private router: Router,
     private activatedRoute: ActivatedRoute,
     private i18n: NzI18nService
-  ) {}
+  ) { }
 
   ngOnInit() {
     this.goRoute()
@@ -41,13 +41,21 @@ export class AppComponent {
     }
   }
 
+  isMobile() {
+    let flag = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+    return flag;
+  }
+
   goRoute() {
     // is App
     if ('ontouchstart' in window) {
       const url = (this.router.url.split('?')[0] || '').toLowerCase()
       const { page, id, q } = queryString()
       const queryParams = { page, id, q }
-      const path = '/' + String(settings.appTheme).toLowerCase()
+      let customPath = this.isMobile() ? 'app' : settings.appTheme.toLowerCase()
+
+      const path = '/' + customPath
 
       if (!url.includes(path)) {
         this.router.navigate([path], { queryParams })
